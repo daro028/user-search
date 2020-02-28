@@ -38,4 +38,4 @@ $("input").keyup(function() {
       };
     })
   );
-})
+});
