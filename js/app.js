@@ -10,12 +10,15 @@ $("input").keyup(function() {
     .val()
     .toLowerCase();
   results = usersData.filter(function(item) {
+    if (item.user.toLowerCase().includes(inputData)) {
+      return true;
+    }
     if (item.name.toLowerCase().includes(inputData)) {
       return true;
-    }
-    if (item.age.toLowerCase().includes(inputData)) {
+    }   
+     if (item.lastname.toLowerCase().includes(inputData)) {
       return true;
-    }
+    } 
   });
 
   if (!firstSearch) {
@@ -33,7 +36,6 @@ $("input").keyup(function() {
     results.map(function(item) {
       return {
         user: item.Usuario,
-        pass: item.Contrasena,
         name: item.Nombre,
         lastname: item.Apellido,
       };
