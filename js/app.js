@@ -1,7 +1,7 @@
 var usersData = [];
 var results = [];
 var firstSearch = false;
-$.get("https://sheetdb.io/api/v1/r8iuy0p7lfcci", function(data) {
+$.get("https://sheetdb.io/api/v1/knwvt52fkyclp", function(data) {
   usersData = data;
 });
 
@@ -32,9 +32,10 @@ $("input").keyup(function() {
     $("#resultsTemplate"),
     results.map(function(item) {
       return {
-        name: item.name,
-        user: item.age,
-        pass: item.id
+        user: item.Usuario,
+        pass: item.Contrasena,
+        name: item.Nombre,
+        lastname: item.Apellido,
       };
     })
   );
