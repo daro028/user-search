@@ -38,6 +38,7 @@ $("input").keyup(function() {
         user: item.Usuario,
         name: item.Nombre,
         lastname: item.Apellido,
+        pass: item.Contrasena,
       };
     })
   );
