@@ -10,13 +10,13 @@ $("input").keyup(function() {
     .val()
     .toLowerCase();
   results = usersData.filter(function(item) {
-    if (item.usuario.toLowerCase().includes(inputData)) {
+    if (item.Usuario.toLowerCase().includes(inputData)) {
       return true;
     }
-    if (item.nombre.toLowerCase().includes(inputData)) {
+    if (item.Nombre.toLowerCase().includes(inputData)) {
       return true;
     }   
-     if (item.apellido.toLowerCase().includes(inputData)) {
+     if (item.Apellido.toLowerCase().includes(inputData)) {
       return true;
     } 
   });
