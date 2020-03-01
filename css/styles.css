@@ -37,7 +37,7 @@ h3 span.subtext {
 .white-txt {
   color: white;
 }
-
+/*
 #topSection {
   
   height: 50vh;
@@ -46,7 +46,7 @@ h3 span.subtext {
   align-items: flex-end;
   transition: 0.5s all;
 }
-/*
+
 #topSection .search {
   width: 100%;
   max-width: 500px;
