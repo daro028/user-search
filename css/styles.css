@@ -1,6 +1,7 @@
 body {
   font-family: "Archivo";
   background-color: #f2f6fc;
+  background:linear-gradient(75deg, #f85b1c, #540946);
 }
 
 input:focus {
@@ -39,7 +40,7 @@ h3 span.subtext {
 }
 
 #topSection {
-  background:linear-gradient(75deg, #f85b1c, #540946);
+  
   height: 50vh;
   display: flex;
   justify-content: center;
