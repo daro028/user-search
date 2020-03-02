@@ -75,7 +75,7 @@ body.results #topSection {
   align-items: center;
 }
 
-/* #resultSection {
+  #resultSection {
   position: relative;
   top: -1px;
   background-image: url("../assets/wave.svg");
@@ -83,7 +83,7 @@ body.results #topSection {
   height: 50vh;
   display: flex;
   justify-content: center;
-} */
+} 
 
 #resultSection .container {
   display: none;
