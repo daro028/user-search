@@ -78,7 +78,6 @@ body.results #topSection {
   #resultSection {
   position: relative;
   top: -1px;
-  background-image: url("../assets/wave.svg");
   background-size: cover;
   height: 50vh;
   display: flex;
