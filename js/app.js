@@ -76,4 +76,4 @@ $("input").keyup(function() {
 
 $("select").change(function() {
   search();
-});
+})
