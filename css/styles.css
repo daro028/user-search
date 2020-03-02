@@ -1,6 +1,7 @@
 body {
   font-family: "Archivo";
   background:linear-gradient(75deg, #f85b1c, #540946);
+  height: 100%;
 }
 
 input:focus {
