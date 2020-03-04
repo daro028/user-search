@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de usuarios</title>
+
+    <!-- Status bar Color -->
+    <meta name="theme-color" content="#2af598">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2af598">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bootstrap-wrapper">
+    <main id="topSection" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center white-txt">
+                    <h1>Buscador de usuarios</h1>
+                    <div class="search">
+                        <input type="text" name="" id="" placeholder="Ingrese nombre o usuario a buscar">
+                    </div>
+                    <div class="courseSelector">
+                        <h4>Curso: </h4>
+                        <select name="" id="curso">
+                            <option value="0">Todos</option>
+                            <option value="1">1er Año</option>
+                            <option value="2">2do Año</option>
+                            <option value="3">3do Año</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="resultSection" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" id="resultList">
+
+                </div>
+                <div class="col-md-12 text-center white-txt" id="noresults">
+                    <h2>no se encontraron resultados</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="resultsTemplate">
+        <div class="result">
+            <h2 ><span data-content="name"></span><span>, </span> <span data-content="lastname"></span></h2>
+            <div class="data">
+                <h3><span class="subtext">Usuario: </span><span data-content="user"></span></h3>
+                <h3><span class="subtext">Contraseña: </span><span data-content="pass"></span></h3>
+            </div>
+        </div>
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-template.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
