@@ -3,8 +3,6 @@ html, body {
   padding: 0;
   height: 100%;
   margin: 0;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
 ::-webkit-input-placeholder { 
@@ -18,6 +16,9 @@ background: -moz-linear-gradient(top, rgba(32,56,94,1) 0%, rgba(57,53,80,1) 50%,
 background: -webkit-linear-gradient(top, rgba(32,56,94,1) 0%,rgba(57,53,80,1) 50%,rgba(90,54,68,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(32,56,94,1) 0%,rgba(57,53,80,1) 50%,rgba(90,54,68,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20385e', endColorstr='#5a3644',GradientType=0 ); /* IE6-9 */
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 input:focus,
@@ -145,6 +146,7 @@ body.results #topSection {
 
 #resultSection .result .data {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -208,5 +210,11 @@ body.results #resultSection .container {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #resultSection .result .data {
+    flex-direction: column !important;
   }
 }
