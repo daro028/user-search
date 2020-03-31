@@ -1,7 +1,7 @@
 var usersData = [];
 var results = [];
 var firstSearch = false;
-$.get("https://sheetdb.io/api/v1/knwvt52fkyclp", function(data) {
+$.get("https://sheet.best/api/sheets/4d1081da-5936-4db2-ad34-1773c527faa1", function(data) {
   usersData = data;
 });
 
@@ -44,7 +44,7 @@ var search = function() {
       results.map(function(item) {
         return {
           user: item.Usuario,
-          pass: item.Contrasena,
+          pass: item.Contraseña,
           name: item.Nombre,
           lastname: item.Apellido
         };
@@ -57,7 +57,7 @@ var search = function() {
       results.map(function(item) {
         return {
           user: item.Usuario,
-          pass: item.Contrasena,
+          pass: item.Contraseña,
           name: item.Nombre,
           lastname: item.Apellido
         };
