@@ -46,7 +46,8 @@ var search = function() {
           user: item.Usuario,
           pass: item.Contraseña,
           name: item.Nombre,
-          lastname: item.Apellido
+          lastname: item.Apellido,
+          curso: item.Curso
         };
       })
     );
