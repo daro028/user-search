@@ -1,0 +1,12 @@
+{
+"name": "#BuscadorDeUsuarios",
+"short_name": "#BuscadorDeUsuarios",
+"description": "Bienvenidos al Buscador de Usuarios del Instituto Fátima",
+"background_color": "#2B2B2B",
+"theme_color": "rgb(32,56,94)",
+"orientation": "portrait",
+"display": "standalone",
+"start_url": "/?utm_source=web_app_manifest",
+"scope": "/",
+"lang": "es-AR"
+}
