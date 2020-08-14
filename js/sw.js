@@ -24,11 +24,11 @@ self.addEventListener('activate', e => {
     const cacheWhitelist = [CACHE_NAME]
 
     e.waitUntil(
-        caches.key()
+        cache.key()
         .then(cachesNames => {
             cachesNames.map(cacheName =>{
                 if (cacheWhitelist.indexOf(cacheName)===-1) {
-                    return caches.delete(cacheName)
+                    return cache.delete(cacheName)
                 }
             })
         })
@@ -38,7 +38,7 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
     e.respondWith(
-        caches.match(e.request)
+        cache.match(e.request)
         .then (res => {
             if(res){
                 return res
