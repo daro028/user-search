@@ -6,10 +6,10 @@ urlsToCache = [
 'css/bootstrap-grid.min.css',
 'https://fonts.googleapis.com/css?family=Archivo:400,500,700&display=swap',
 'css/styles.css',
-'json/manifest.json'
+'js/script.js'
 ]
 
-self.addEventListener('install', e =>{
+self.addEventListener('install', e => {
     e.waitUntil(
     caches.open(CACHE_NAME)
         .then(cache =>{
@@ -25,9 +25,9 @@ self.addEventListener('activate', e => {
 
     e.waitUntil(
         caches.keys()
-        .then(cachesNames => {
-            cachesNames.map(cacheName =>{
-                if (cacheWhitelist.indexOf(cacheName)===-1) {
+        .then(cacheNames => {
+            cacheNames.map(cacheName =>{
+                if (cacheWhitelist.indexOf(cacheName) === -1) {
                     return caches.delete(cacheName)
                 }
             })
